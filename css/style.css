@@ -1,5 +1,5 @@
 body {
-	background-color: beige;
+	background-color: rgb(228, 228, 229);
 }
 
 /* background image */
@@ -16,7 +16,7 @@ body {
     height: 60vh;
     top: 0;
     left: 0;
-    box-shadow: 0 -20px 200px 10px beige inset;
+    box-shadow: 0 -20px 200px 10px rgb(228, 228, 229) inset;
 }
 
 #background-image {
@@ -45,3 +45,20 @@ body {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+/* footer */
+footer {
+	column-count: 2;
+	background: linear-gradient(rgb(228, 228, 229), rgb(137, 140, 150));
+}
+
+footer div {
+	text-align: center;
+}
+
+#footer-content {
+	text-align: left;
+	position: relative;
+	left: 35%;
+}
+

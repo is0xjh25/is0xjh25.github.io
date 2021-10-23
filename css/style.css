@@ -1,7 +1,47 @@
-#background {
-	width: 100%;
+body {
+	background-color: beige;
 }
 
-#background img {
-	width: fit-content
+/* background image */
+.cover {
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+}
+
+.cover:after {
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 60vh;
+    top: 0;
+    left: 0;
+    box-shadow: 0 -20px 200px 10px beige inset;
+}
+
+#background-image {
+	width: 100vw;
+	height: 60vh;
+	display: block;
+}
+
+/* profile section */
+#profile-image {
+	width: 120px;
+	height: 120px;
+	border-radius:75px;
+}
+
+#profile {
+	position: relative;
+	top: -50px;
+	margin: 0 auto;
+	width: 30%;
+	text-align: center;
+	justify-content: center;
+}
+
+#profile h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }

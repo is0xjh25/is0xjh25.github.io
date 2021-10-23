@@ -48,8 +48,9 @@ body {
 
 /* footer */
 footer {
+	padding: 1%;
 	column-count: 2;
-	background: linear-gradient(rgb(228, 228, 229), rgb(137, 140, 150));
+	background: linear-gradient(rgb(228, 228, 229), rgb(240, 177, 126));
 }
 
 footer div {
@@ -61,4 +62,24 @@ footer div {
 	position: relative;
 	left: 35%;
 }
+
+/* Link */
+
+
+a:link { 
+	color: blue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: brown;
+}
+
+a:hover{ 
+	color: brown;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
 

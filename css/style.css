@@ -2,6 +2,10 @@ body {
 	background-color: rgb(228, 228, 229);
 }
 
+h1 {
+	text-shadow: 3px 0 3px orange;
+}
+
 /* background image */
 .cover {
     width: 100vw;
@@ -71,31 +75,38 @@ footer li {
 }
 
 /* Link */
-a:link { 
+li a:link { 
 	color: blue;
 	text-decoration: none;
 }
 
-a:visited {
-	color: brown;
+li a:visited {
+	color: brown;	
 }
 
-a:hover { 
-	color: brown;
+li a:hover { 
+	color: blueviolet;
 	font-weight: bold;
 	text-decoration: underline;
 }
 
 h3 a:link { 
-	color: black;
+	color: Sienna;
+	text-decoration: none;
+}
+
+h3 a:visited { 
+	color: SaddleBrown;
 	text-decoration: none;
 }
 
 h3 a:hover { 
-	color: black;
+	color: darkorange;
 	font-weight: bold;
 	font-size: larger;
 }
+
+
 
 /* Main Content */
 .column {
@@ -108,25 +119,16 @@ h3 a:hover {
 }
 
 section {
-	border: solid #000;
-	border-width: 2px;
 	display: block;
 	margin: 1%;
 	width: 98%;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	padding: 3%;
+	padding: 2%;
 }
 
-/* Education */
 section div {
 	text-align: left;
 	margin:3%;
 }
-
-/* Programming Knowledge*/
-
-/* Project Experience */
-
-/* Work Experience */

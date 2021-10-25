@@ -116,7 +116,7 @@ h3 a:hover {
 
   #content{
 	display: flex;
-	margin: -2% 0 0 8%;
+	margin: -2% 6% 0 2%;
 	width: 92%;
 }
 
@@ -149,5 +149,24 @@ section h2 {
 	margin-top: 2px;
 }
 
+/* side bar */
+#sidenav {
+	position: fixed;
+	top: 33%;
+	right: 0;
+	width: 5%;
+	background: MistyRose;
+	margin: 1%;
+	border-radius: 5%;
+}
+
+.button {
+	display: block;
+	font-size: 33px;
+	cursor: pointer;
+	align-self: center;
+	margin: 10% auto;
+	background-color: transparent;
+}
 
 

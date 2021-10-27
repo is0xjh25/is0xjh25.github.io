@@ -9,6 +9,22 @@
 		<link rel="stylesheet" href="./css/layout.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://kit.fontawesome.com/a31db65717.js" crossorigin="anonymous"></script>
+		<script> 
+			function download() {
+				var a = document.createElement("a");
+  				a.href = "./resume.pdf";
+  				a.setAttribute("download", "Yun-Chi Hsiao's Resume");
+  				a.click();
+			}
+
+			function email() {
+				alert("!!!");
+			}
+
+			function share() {
+				alert("!!!");
+			}
+		</script>	
 	</head>
 	<body>
 		<header>
@@ -29,10 +45,9 @@
 				</p>
 			</div>
 			<div id="sidenav">
-				<button class="button"><i class="fas fa-file-download"></i></button>
-				<button class="button"><i class="fas fa-envelope-open-text"></i></button>
-				<button class="button"><i class="fas fa-comment-dots"></i></button>
-				<button class="button"><i class="fas fa-share-alt-square"></i></button>
+				<button type="button" class="button" onclick="download()"><i class="fas fa-file-download"></i></button>
+				<button type="button" class="button" onclick="email()"><i class="fas fa-envelope-open-text"></i></button>
+				<button type="button" class="button" onclick="share()"><i class="fas fa-share-alt-square"></i></button>
 			</div>
 		</header>
 		<div id="content">
@@ -139,7 +154,7 @@
 				<div class="footer-content">
 					<li>Phone: (+61) 415863535</li>
 					<li>Email: <a href="mailto: is0.jimhsiao@gmail.com">is0.jimhsiao@gmail.com</a></li>
-					<li>Linkedin: <a href="www.linkedin.com/in/yunchi-hsiao" target="_blank">Yun-Chi Hsiao</a></li>
+					<li>Linkedin: <a href="https://linkedin.com/in/yunchi-hsiao/" target="_blank">Yun-Chi Hsiao</a></li>
 					<li>Medium: <a href="https://medium.com/@is0xjh25/about" target="_blank">Yun-Chi Hsiao</a></li>
 					<li>Instagram: <a href="https://www.instagram.com/is0xMoment/" target="_blank">is0xMoment</a></li>
 				</div>

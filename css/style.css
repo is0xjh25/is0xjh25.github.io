@@ -84,6 +84,11 @@ footer {
 	background: linear-gradient(rgb(228, 228, 229), MistyRose);
 	margin-top: 5%;
 	padding: 1%;
+	font-family: Copperplate, Helvetica;
+}
+
+footer h3 {
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 footer > div {
@@ -111,8 +116,12 @@ footer > div {
 .right-column {
 	float: left;
 	width: 33.33%;
-	padding-top: 1.5%;
+	justify-content: center;
+}
 
+.right-column div {
+	height: 50%;
+	padding-top: 1%;
 }
   
  /* Clear floats after the columns */
@@ -123,13 +132,16 @@ footer > div {
 }
 
 #favicon-image{
-	width: 25%;
+	width: 18%;
+}
+
+#hit-counter {
+	width: 20%;
 }
 
 /* List */
 footer li {
 	list-style-type: square;
-	font-family: Copperplate, Helvetica;
 }
 
 /* Link */

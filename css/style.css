@@ -164,7 +164,8 @@ section h2 {
 }
 
 /* side bar */
-#sidenav {
+#sidenav-active {
+	display: block;
 	position: fixed;
 	top: 33%;
 	right: 0;
@@ -172,6 +173,22 @@ section h2 {
 	background: MistyRose;
 	margin: 1%;
 	border-radius: 5%;
+	opacity: 1;
+    transition: height 0ms 0ms, opacity 1s 0ms;
+}
+
+#sidenav-inactive {
+	display: block;
+	position: fixed;
+	top: 33%;
+	right: 0;
+	width: 5%;
+	background: MistyRose;
+	margin: 1%;
+	border-radius: 5%;
+	overflow: hidden;
+    opacity: 0;
+    transition: height 0ms 1s, opacity 1s 0ms;
 }
 
 .button {

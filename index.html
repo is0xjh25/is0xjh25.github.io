@@ -26,16 +26,24 @@
 		</script>	
 		<script>
 			const originalTitle = document.title;
-			window.addEventListener('scroll', function() {
-				r = document.querySelector(':root');
+			window.addEventListener("scroll", function() {
+				r = document.querySelector(":root");
 				var h = document.documentElement, 
 				b = document.body,
-				st = 'scrollTop',
-				sh = 'scrollHeight';
+				st = "scrollTop",
+				sh = "scrollHeight";
 				var percent = (h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * 100;
 				var roundedPercent = Math.round(percent);
 				r.style.setProperty('--scroll', percent+"0%");
 				document.title = `${originalTitle} - ${roundedPercent}%`;
+
+				// percent < 5 ?
+				// document.getElementById("sidenav").style.display="none" :
+				// document.getElementById("sidenav").style.display="block"
+				percent < 5 ?
+				document.getElementById("sidenav-active").id = "sidenav-inactive"  :
+				document.getElementById("sidenav-inactive").id="sidenav-active";
+
 			});
 		</script>
 	</head>
@@ -58,7 +66,7 @@
 					A basketball lover and fitness enthusiast who also enjoy to be a couch potato sometimes.<br>
 				</p>
 			</div>
-			<div id="sidenav">
+			<div id="sidenav-inactive">
 				<button type="button" class="button" onclick="download()"><i class="fas fa-file-download"></i></button>
 				<button type="button" class="button" onclick="email()"><i class="fas fa-envelope-open-text"></i></button>
 				<button type="button" class="button" onclick="share()"><i class="fas fa-share-alt-square"></i></button>

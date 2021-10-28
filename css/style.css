@@ -163,6 +163,16 @@ h3 a:hover {
 	width: 92%;
 }
 
+#fun-video div {
+	width: 90%;
+	height: 300px;
+}
+
+#meme {
+	width: 100%;
+	height: 100%;
+}
+
 section {
 	font-size: 16px;
 	display: block;
@@ -183,11 +193,11 @@ section h2 {
 }
 
 #project h3 {
-	font-size: 17.5px;
+	font-size: 20px;
 }
 
 #project li {
-	font-size: 14px;
+	font-size: 16px;
 	margin-top: 2px;
 }
 

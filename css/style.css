@@ -49,16 +49,27 @@ header {
 	width: 15%;
 	height: 15%;
 	border-radius:50%;
-	border: solid rgb(240, 177, 126);
-	border-width: 2px;
+	border: solid orange;
+	border-width: 3px;
 }
 
 #profile-image:hover {
-	width: 23%;
-	height: 23%;
+	width: 20%;
+	height: 20%;
 	border-radius:0%;
 	border-radius:10%;
 	border: none;
+}
+
+
+#profile-image:hover + h1 {
+	text-shadow: 3px 0 3px orange;
+	font-size: 40px;
+}
+
+#profile-image:hover ~ #intro {
+	text-shadow: 3px 0 3px orange;
+	font-size: 25px;
 }
 
 #profile {
@@ -74,8 +85,12 @@ header {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-family: Impact, Helvetica;
-	text-shadow: 3px 0 3px orange;
 }
+
+#profile p{
+	text-shadow: none;
+}
+
 
 /* footer */
 footer {
@@ -237,6 +252,7 @@ section li {
 
 #programming li:hover + span  {
 	display: block;
+	font-style: italic;
 }
 
 #project h3 {

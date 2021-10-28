@@ -42,10 +42,10 @@ body {
 
 /* profile section */
 header {
-	font-family: Helvetica;
+	font-family: Helvetica, sans-serif;
 }
 
-#profile-image {
+#profile-img {
 	width: 15%;
 	height: 15%;
 	border-radius:50%;
@@ -53,7 +53,7 @@ header {
 	border-width: 3px;
 }
 
-#profile-image:hover {
+#profile-img:hover {
 	width: 20%;
 	height: 20%;
 	border-radius:0%;
@@ -62,12 +62,12 @@ header {
 }
 
 
-#profile-image:hover + h1 {
+#profile-img:hover + h1 {
 	text-shadow: 3px 0 3px orange;
 	font-size: 40px;
 }
 
-#profile-image:hover ~ #intro {
+#profile-img:hover ~ #intro {
 	text-shadow: 3px 0 3px orange;
 	font-size: 25px;
 }
@@ -146,7 +146,7 @@ footer > div {
 	clear: both;
 }
 
-#favicon-image{
+#favicon-img{
 	width: 18%;
 }
 
@@ -213,7 +213,7 @@ h3 a:hover {
 	height: 300px;
 }
 
-#meme {
+#meme-img {
 	width: 100%;
 	height: 100%;
 }

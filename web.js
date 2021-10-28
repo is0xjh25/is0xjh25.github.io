@@ -20,7 +20,7 @@ function changeTheme() {
 
 /* scroll */
 const originalTitle = document.title;
-	window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function() {
 	r = document.querySelector(":root");
 	var h = document.documentElement, 
 	b = document.body,
@@ -30,8 +30,10 @@ const originalTitle = document.title;
 	var roundedPercent = Math.round(percent);
 	r.style.setProperty('--scroll', percent+"0%");
 	document.title = `${originalTitle} - ${roundedPercent}%`;
-
-	percent < 5 ?
-	document.getElementById("sidenav-active").id = "sidenav-inactive"  :
-	document.getElementById("sidenav-inactive").id="sidenav-active";
+	
+	if (percent < 5) {
+		if (document.getElementById("sidenav-active")) document.getElementById("sidenav-active").id = "sidenav-inactive";
+	} else {
+		if (document.getElementById("sidenav-inactive")) document.getElementById("sidenav-inactive").id = "sidenav-active";
+	}
 });

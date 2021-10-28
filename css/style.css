@@ -184,11 +184,13 @@ h3 a:hover {
 }
 
 #left-content {
-	padding-right: 3%;
+	width: 85%;
+	padding-right: 1%;
 }
 
 #right-content {
-	padding-left: 3%;
+	width: 115%;
+	padding-left: 1%;
 }
 
 #fun-video div {

@@ -33,26 +33,28 @@ This also is my first frontend project, good luck to me :) <br/>
 2. Boronia Two-dollar Shop
 
 ## Project Experience
-- Personal CRM (DOM, JavaScript, React)
-- DNS Server Management (C Language)
-- Process-Scheduling Management (C Language)
-- Coordinates(map) Searching (C Language)
-- Ray Tracing (C#, Unity)
+- Personal CRM (_DOM, JavaScript, React_)
+- DNS Server Management (_C Language_)
+- Process-Scheduling Management (_C Language_)
+- Coordinates(map) Searching (_C Language_)
+- Ray Tracing (_C#, Unity_)
 
 ## Footer
-### GitHub
+**GitHub**<br/>
 - [Personal CRM](https://github.com/is0xjh25/comp30022-it-project-frontend)
 - [DNS Server Management](https://github.com/is0xjh25/dns-server)
 - [Process-Scheduling Management](https://github.com/is0xjh25/process-scheduling)
 - [Coordinates(map) Searching](https://github.com/is0xjh25/kd-tree-searching)
 - [Ray Tracing](https://github.com/is0xjh25/ray-tracer)
-### Contact & Social Media
-- Phone: (+61) 415863535
+**Contact & Social Media**<br/>
+- Phone - (+61)415863535
 - [Email](is0.jimhsiao@gmail.com)
 - [Linkedin](https://www.linkedin.com/in/yunchi-hsiao/)
 - [Medium](https://medium.com/@is0xjh25/about)
 - [Instagram](https://www.instagram.com/is0xMoment/)
 
-<p align="center">
+
+
+<p align="left">
   <img alt="Favicon" src="favicon_io/android-chrome-512x512.png" width="250" >
 </p>

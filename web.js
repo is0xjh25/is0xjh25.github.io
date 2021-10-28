@@ -39,7 +39,7 @@ window.addEventListener("scroll", function() {
 	r.style.setProperty('--scroll', percent+"0%");
 	document.title = `${originalTitle} - ${roundedPercent}%`;
 	
-	if (percent < 5) {
+	if (percent < 9) {
 		if (document.getElementById("sidenav-active")) document.getElementById("sidenav-active").id = "sidenav-inactive";
 	} else {
 		if (document.getElementById("sidenav-inactive")) document.getElementById("sidenav-inactive").id = "sidenav-active";

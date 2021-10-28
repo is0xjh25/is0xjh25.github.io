@@ -91,14 +91,13 @@ header {
 	text-shadow: none;
 }
 
-
 /* footer */
 footer {
 	display: block;
 	width: 99%;
 	background: linear-gradient(rgb(228, 228, 229), MistyRose);
 	margin-top: 5%;
-	padding: 1%;
+	padding: 0.5%;
 	font-family: Copperplate, Helvetica;
 }
 
@@ -282,7 +281,7 @@ section li {
 #sidenav-active {
 	display: block;
 	position: fixed;
-	top: 33%;
+	top: 40%;
 	right: 0;
 	width: 5%;
 	background: MistyRose;
@@ -295,7 +294,7 @@ section li {
 #sidenav-inactive {
 	display: block;
 	position: fixed;
-	top: 33%;
+	top: 40%;
 	right: 0;
 	width: 5%;
 	background: MistyRose;
@@ -303,7 +302,7 @@ section li {
 	border-radius: 5%;
 	overflow: hidden;
     opacity: 0;
-    transition: height 0ms 1s, opacity 1s 0ms;
+    transition: height 0ms 1s, opacity 100ms 0ms;
 }
 
 .button {

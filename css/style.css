@@ -71,21 +71,51 @@ header {
 
 /* footer */
 footer {
+	display: block;
+	width: 99%;
+	background: linear-gradient(rgb(228, 228, 229), MistyRose);
 	margin-top: 5%;
 	padding: 1%;
-	column-gap: normal;
-	column-count: 2;
-	background: linear-gradient(rgb(228, 228, 229), MistyRose);
 }
 
-footer div {
+footer > div {
 	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
 
-.footer-content {
+.left-column {
+	float: left;
+	width: 33.33%;
+	padding-left: 10%;
 	text-align: left;
 	position: relative;
-	padding-left: 30%;
+}
+
+.mid-column {
+	float: left;
+	width: 33.33%;
+	padding-left: 12%;
+	text-align: left;
+	position: relative;
+}
+
+.right-column {
+	float: left;
+	width: 33.33%;
+	padding-top: 1.5%;
+
+}
+  
+ /* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#favicon-image{
+	width: 25%;
 }
 
 /* List */
@@ -127,8 +157,7 @@ h3 a:hover {
 }
 
 /* Main Content */
-
-  #content{
+#content{
 	display: flex;
 	margin: -2% 6% 0 2%;
 	width: 92%;
@@ -151,7 +180,6 @@ section div {
 
 section h2 {
 	background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(248, 148, 6, 1));
-
 }
 
 #project h3 {

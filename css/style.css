@@ -212,6 +212,23 @@ section h2 {
 	background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(248, 148, 6, 1));
 }
 
+section li {
+	margin: 3px auto;
+}
+
+#programming span {
+	display: none;
+}
+
+#programming li:hover {
+	background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(34, 253, 224));
+	font-size: larger;
+}
+
+#programming li:hover + span  {
+	display: block;
+}
+
 #project h3 {
 	font-size: 20px;
 }

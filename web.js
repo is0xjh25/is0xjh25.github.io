@@ -1,4 +1,4 @@
-/* button onclick*/
+/* download resume.pdf */
 function download() {
 	var a = document.createElement("a");
 	  a.href = "./resume.pdf";
@@ -6,16 +6,24 @@ function download() {
 	  a.click();
 }
 
+/* send email to me */
 function email() {
 	window.open('mailto: is0.jimhsiao@gmail.com');
 }
 
+/* copy url */
 function share() {
-	alert("Share to social media");
+	navigator.clipboard.writeText(document.location.href);
+	let x = document.getElementById("snackbar-1");
+	x.className = "show";
+	setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
+/* change to light or dark theme */
 function changeTheme() {
-	alert("Let's change the theme");
+	let x = document.getElementById("snackbar-2");
+	x.className = "show";
+	setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
 /* scroll */

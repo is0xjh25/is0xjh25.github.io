@@ -13,7 +13,19 @@
 		<script src="./web.js"></script>
 	</head>
 	<body>
+		<!-- scroll percetage -->
 		<div id="progress"></div>
+		<!-- sidebar -->
+		<div id="sidenav-inactive">
+			<button type="button" class="button" onclick="download()"><i class="fas fa-file-download"></i></button>
+			<button type="button" class="button" onclick="email()"><i class="fas fa-envelope-open-text"></i></button>
+			<button type="button" class="button" onclick="share()"><i class="fas fa-share-alt-square"></i></button>
+			<button type="button" class="button" onclick="changeTheme()"><i class="fas fa-moon"></i></button>
+			<!-- <button type="button" class="button" onclick="changeTheme()"><i class="fas fa-sun"></i></button> -->
+		</div>
+		<!-- snakebar -->
+		<div id="snackbar-1">Website's url has been copied</div>
+		<div id="snackbar-2">Theme has been changed</div>
 		<header>
 			<div id="cover">
 				<img alt="basketball-court" src="./images/background.jpeg" id="background-image">
@@ -30,13 +42,6 @@
 					An enthusiastic programmer who is studying web development and aiming to become a fullstack software engineer.<br>
 					A basketball lover and fitness enthusiast who also enjoy to be a couch potato sometimes.<br>
 				</p>
-			</div>
-			<div id="sidenav-inactive">
-				<button type="button" class="button" onclick="download()"><i class="fas fa-file-download"></i></button>
-				<button type="button" class="button" onclick="email()"><i class="fas fa-envelope-open-text"></i></button>
-				<button type="button" class="button" onclick="share()"><i class="fas fa-share-alt-square"></i></button>
-				<button type="button" class="button" onclick="changeTheme()"><i class="fas fa-moon"></i></button>
-				<!-- <button type="button" class="button" onclick="changeTheme()"><i class="fas fa-sun"></i></button> -->
 			</div>
 		</header>
 		<div id="content">

@@ -54,8 +54,6 @@ This also is my first frontend project, good luck to me :) <br/>
 - [Medium](https://medium.com/@is0xjh25/about)
 - [Instagram](https://www.instagram.com/is0xMoment/)
 <br/>
-<br/>
-<br/>
 <p align="left">
   <img alt="Favicon" src="favicon_io/android-chrome-512x512.png" width="250" >
 </p>

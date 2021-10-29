@@ -1,15 +1,63 @@
 :root {
+	--background-image-width: 100vw;
 	--background-image-height: 55vh;
 	--scroll: 0%;
 }
 
+.default {
+	--primary-color: orange;
+	--secondary-color: rgb(255, 49, 221);
+	--background-primary: rgb(228, 228, 229);
+	--background-secondary: MistyRose;
+	--text-primary: black;
+	--text-secondary: #454545;
+	--link-li-primary: blue;
+	--link-li-hover: var(--secondary-color);
+	--link-li-visited: brown;
+	--link-h3-primary: Sienna;
+	--link-h3-hover: var(--secondary-color);
+	--link-h3-visited: SaddleBrown;
+	--scroll-color: var(--secondary-color);
+	--sidebar-color: MistyRose;
+	--snackbar-primary: black;
+	--snackbar-secondary: white;
+	--image-border: var(--primary-color);
+	--gradient-primary:
+	--gradient-secondary:
+}
+
+.dark-theme {
+	--primary-color: rgb(255, 255, 255);
+	--secondary-color: rgb(71, 218, 255);
+	--background-primary: black;
+	--background-secondary: rgb(95, 93, 93);
+	--text-primary: white;
+	--text-secondary: #454545;
+	--link-li-primary: rgb(255, 0, 128);
+	--link-li-hover: var(--secondary-color);
+	--link-li-visited: brown;
+	--link-h3-primary: Sienna;
+	--link-h3-hover: var(--secondary-color);
+	--link-h3-visited: SaddleBrown;
+	--scroll-color: var(--secondary-color);
+	--sidebar-color: MistyRose;
+	--snackbar-primary: white;
+	--snackbar-secondary: black;
+	--image-border: rgb(216, 36, 36);
+	--gradient-primary: rgb(216, 36, 36);
+	--gradient-secondary:  black;
+}
+
+
+
 body {
-	background-color: rgb(228, 228, 229);
+	background-color: var(--background-primary);
+	color: var(--text-primary);
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 #progress {
-    background: linear-gradient(to right, yellow, var(--scroll), transparent 0);
+    background: linear-gradient(to right, var(--scroll-color), var(--scroll), transparent 0);
 	position: fixed;
 	width: 100%;
 	height: 4px;
@@ -19,7 +67,7 @@ body {
 
 /* background image */
 #cover {
-    width: 100vw;
+    width: var(--background-image-width);
     height: var(--background-image-height);
     position: relative;
 }
@@ -27,7 +75,7 @@ body {
 #cover:after {
     position: absolute;
     content: '';
-    width: 100vw;
+    width: var(--background-image-width);
     height: var(--background-image-height);
     top: 0;
     left: 0;
@@ -35,7 +83,7 @@ body {
 }
 
 #background-image {
-	width: 100vw;
+	width: var(--background-image-width);
 	height: var(--background-image-height);
 	display: block;
 }
@@ -49,7 +97,7 @@ header {
 	width: 15%;
 	height: 15%;
 	border-radius:50%;
-	border: solid orange;
+	border: solid var(--primary-color);
 	border-width: 3px;
 }
 
@@ -63,12 +111,12 @@ header {
 
 
 #profile-img:hover + h1 {
-	text-shadow: 3px 0 3px orange;
+	text-shadow: 3px 0 3px var(--image-border);
 	font-size: 40px;
 }
 
 #profile-img:hover ~ #intro {
-	text-shadow: 3px 0 3px orange;
+	text-shadow: 3px 0 3px var(--image-border);
 	font-size: 25px;
 }
 
@@ -95,7 +143,7 @@ header {
 footer {
 	display: block;
 	width: 99%;
-	background: linear-gradient(rgb(228, 228, 229), MistyRose);
+	background: linear-gradient(var(--background-primary), var(--background-secondary));
 	margin-top: 5%;
 	padding: 0.5%;
 	font-family: Copperplate, Helvetica;
@@ -160,32 +208,32 @@ footer li {
 
 /* Link */
 li a:link { 
-	color: blue;
+	color: var(--link-li-primary);
 	text-decoration: none;
 }
 
 li a:visited {
-	color: brown;	
+	color: var(--link-li-visited);	
 }
 
 li a:hover { 
-	color: blueviolet;
+	color: var(--link-li-hover);
 	font-weight: bold;
 	text-decoration: underline;
 }
 
 h3 a:link { 
-	color: Sienna;
+	color: var(--link-h3-primary);
 	text-decoration: none;
 }
 
 h3 a:visited { 
-	color: SaddleBrown;
+	color: var(--link-h3-visited);
 	text-decoration: none;
 }
 
 h3 a:hover { 
-	color: blueviolet;
+	color: var(--link-h3-hover);
 	font-weight: bold;
 	font-style: italic;
 }
@@ -233,7 +281,7 @@ section div {
 }
 
 section h2 {
-	background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(248, 148, 6, 1));
+	background-image: linear-gradient(to right, var(--gradient-primary), var(--gradient-secondary));
 }
 
 section li {
@@ -245,7 +293,7 @@ section li {
 }
 
 #programming li:hover {
-	background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(34, 253, 224));
+	background-image: linear-gradient(to left, rgba(255,0,0,0), var(--secondary-color));
 	font-size: larger;
 }
 
@@ -284,7 +332,7 @@ section li {
 	top: 40%;
 	right: 0;
 	width: 5%;
-	background: MistyRose;
+	background: var(--sidebar-color);
 	margin: 1%;
 	border-radius: 5%;
 	opacity: 1;
@@ -297,7 +345,7 @@ section li {
 	top: 40%;
 	right: 0;
 	width: 5%;
-	background: MistyRose;
+	background: var(--sidebar-color);
 	margin: 1%;
 	border-radius: 5%;
 	overflow: hidden;
@@ -319,8 +367,8 @@ section li {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--snackbar-primary);
+  color: var(--snackbar-secondary);
   text-align: center;
   border-radius: 30px;
   padding: 16px;
@@ -341,8 +389,8 @@ section li {
 	visibility: hidden;
 	min-width: 250px;
 	margin-left: -125px;
-	background-color: #333;
-	color: #fff;
+	background-color: var(--snackbar-primary);
+	color: var(--snackbar-secondary);
 	text-align: center;
 	border-radius: 30px;
 	padding: 16px;

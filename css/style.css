@@ -22,8 +22,8 @@
 	--snackbar-primary: black;
 	--snackbar-secondary: white;
 	--image-border: var(--primary-color);
-	--gradient-primary:
-	--gradient-secondary:
+	--gradient-primary: rgba(248, 148, 6, 1);
+	--gradient-secondary: rgba(255,0,0,0);
 }
 
 .dark-theme {

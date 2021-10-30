@@ -1,9 +1,9 @@
 /* download resume.pdf */
 function download() {
 	var a = document.createElement("a");
-	  a.href = "./resume.pdf";
-	  a.setAttribute("download", "Yun-Chi Hsiao's Resume");
-	  a.click();
+	a.href = "./resume.pdf";
+	a.setAttribute("download", "Yun-Chi Hsiao's Resume");
+	a.click();
 }
 
 /* send email to me */
@@ -20,7 +20,23 @@ function share() {
 }
 
 /* change to light or dark theme */
-function changeTheme() {
+function changeTheme(iconID) {
+
+	// change icon
+	let element = document.getElementById(iconID).querySelector("i");
+	
+	if (element.className === "fas fa-moon") {
+		element.className = "fas fa-sun";
+	} else {
+		element.className = "fas fa-moon";
+	}
+
+	if (document.body.classList.contains ("default")) {
+		document.body.className = "dark-theme";
+	} else if (document.body.classList.contains ("dark-theme")) {
+		document.body.className = "default";
+	}
+
 	let x = document.getElementById("snackbar-2");
 	x.className = "show";
 	setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);

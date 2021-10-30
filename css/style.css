@@ -344,7 +344,7 @@ section li {
 	position: fixed;
 	top: 40%;
 	right: 0;
-	width: 5%;
+	width: 0;
 	background: var(--sidebar-color);
 	margin: 1%;
 	border-radius: 5%;

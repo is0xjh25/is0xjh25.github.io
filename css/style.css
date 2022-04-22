@@ -311,7 +311,7 @@ section li {
 	margin-top: 2px;
 }
 
-#personal-crm {
+.favicon {
 	display: inline-block;
 	position: relative;
 	top: 3px;
@@ -320,7 +320,7 @@ section li {
 	height: 20px; 
 }
 
-#personal-crm-img {
+.favicon-img {
 	width: 100%;
 	height: 100%;
 }

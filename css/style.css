@@ -91,20 +91,20 @@ body {
 /* profile section */
 header {
 	font-family: Helvetica, sans-serif;
-	font-size: calc(var(--font-size) * 1.5);
+	font-size: calc(var(--font-size) * 1.25);
 }
 
 #profile-img {
 	width: 20%;
 	height: 20%;
-	border-radius:50%;
+	border-radius: 50%;
 	border: solid var(--primary-color);
 	border-width: 3%;
 }
 
 #profile-img:hover {
-	width: 25%;
-	height: 25%;
+	width: 22.5%;
+	height: 22.5%;
 	border-radius:0%;
 	border-radius:10%;
 	border: none;
@@ -117,7 +117,7 @@ header {
 
 #profile-img:hover ~ #intro {
 	text-shadow: 5% 0 5% var(--image-border);
-	font-size: calc(var(--font-size) * 2);
+	font-size: calc(var(--font-size) * 2.5);
 }
 
 #profile {

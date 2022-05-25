@@ -2,11 +2,12 @@
 	--background-image-width: 100vw;
 	--background-image-height: 55vh;
 	--scroll: 0%;
+	--font-size: 1vw;
 }
 
 .default {
 	--primary-color: orange;
-	--secondary-color: rgb(255, 49, 221);
+	--secondary-color: rgb(201, 41, 212);
 	--background-primary: rgb(228, 228, 229);
 	--background-secondary: MistyRose;
 	--text-primary: black;
@@ -48,19 +49,18 @@
 	--gradient-secondary:  black;
 }
 
-
-
 body {
 	background-color: var(--background-primary);
 	color: var(--text-primary);
 	font-family: Arial, Helvetica, sans-serif;
+	font-size: calc(var(--font-size) * 1.5);
 }
 
 #progress {
     background: linear-gradient(to right, var(--scroll-color), var(--scroll), transparent 0);
 	position: fixed;
 	width: 100%;
-	height: 4px;
+	height: calc(var(--font-size) * 0.25);
 	z-index: 3;
 	box-sizing: border-box;
 }
@@ -91,38 +91,38 @@ body {
 /* profile section */
 header {
 	font-family: Helvetica, sans-serif;
+	font-size: calc(var(--font-size) * 1.5);
 }
 
 #profile-img {
-	width: 15%;
-	height: 15%;
+	width: 20%;
+	height: 20%;
 	border-radius:50%;
 	border: solid var(--primary-color);
-	border-width: 3px;
+	border-width: 3%;
 }
 
 #profile-img:hover {
-	width: 20%;
-	height: 20%;
+	width: 25%;
+	height: 25%;
 	border-radius:0%;
 	border-radius:10%;
 	border: none;
 }
 
-
 #profile-img:hover + h1 {
-	text-shadow: 3px 0 3px var(--image-border);
-	font-size: 40px;
+	text-shadow: 5% 0 5% var(--image-border);
+	font-size: calc(var(--font-size) * 3);
 }
 
 #profile-img:hover ~ #intro {
-	text-shadow: 3px 0 3px var(--image-border);
-	font-size: 25px;
+	text-shadow: 5% 0 5% var(--image-border);
+	font-size: calc(var(--font-size) * 2);
 }
 
 #profile {
 	position: relative;
-	top: -65px;
+	top: -15vh;
 	margin: 0 auto;
 	width: 90%;
 	text-align: center;
@@ -130,60 +130,54 @@ header {
 }
 
 #profile h1 {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	font-family: Impact, Helvetica;
 }
 
-#profile p{
+#profile p {
 	text-shadow: none;
 }
 
 /* footer */
 footer {
-	display: block;
-	width: 99%;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
 	background: linear-gradient(var(--background-primary), var(--background-secondary));
 	margin-top: 5%;
-	padding: 0.5%;
 	font-family: Copperplate, Helvetica;
+	padding: 1%;
 }
 
 footer h3 {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-footer > div {
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-}
-
 .left-column {
-	float: left;
-	width: 33.33%;
-	padding-left: 10%;
-	text-align: left;
-	position: relative;
+	flex: 5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 }
 
 .mid-column {
-	float: left;
-	width: 33.33%;
-	padding-left: 12%;
-	text-align: left;
-	position: relative;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
 .right-column {
-	float: left;
-	width: 33.33%;
-	justify-content: center;
-}
-
-.right-column div {
-	height: 50%;
-	padding-top: 1%;
+	flex: 4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: smaller;
+	text-align: center;
 }
   
  /* Clear floats after the columns */
@@ -193,11 +187,7 @@ footer > div {
 	clear: both;
 }
 
-#favicon-img{
-	width: 18%;
-}
-
-#hit-counter {
+#favicon-img {
 	width: 20%;
 }
 
@@ -218,7 +208,6 @@ li a:visited {
 
 li a:hover { 
 	color: var(--link-li-hover);
-	font-weight: bold;
 	text-decoration: underline;
 }
 
@@ -241,23 +230,22 @@ h3 a:hover {
 /* Main Content */
 #content{
 	display: flex;
-	margin: -2% 4% 0 4%;
-	width: 92%;
+	flex-direction: row;
+	margin: -5% 0;
+	padding: 0 5%;
 }
 
 #left-content {
-	width: 85%;
-	padding-right: 1%;
+	flex: 4;
 }
 
 #right-content {
-	width: 115%;
-	padding-left: 1%;
+	flex: 5;
 }
 
 #fun-video div {
 	width: 90%;
-	height: 300px;
+	height: 300%;
 }
 
 #meme-img {
@@ -265,8 +253,13 @@ h3 a:hover {
 	height: 100%;
 }
 
+hr {
+	width: 92.5%;
+	height: 0.25vh;
+	background-color: var(--primary-color)
+}
+
 section {
-	font-size: 16px;
 	display: block;
 	margin: 1%;
 	width: 98%;
@@ -285,7 +278,7 @@ section h2 {
 }
 
 section li {
-	margin: 3px auto;
+	margin: 0.5% auto;
 }
 
 #programming span {
@@ -302,27 +295,22 @@ section li {
 	font-style: italic;
 }
 
-#project h3 {
-	font-size: 22px;
-}
-
 #project li {
-	font-size: 16px;
-	margin-top: 2px;
+	margin-top: 1%;
 }
 
 .favicon {
 	display: inline-block;
 	position: relative;
-	top: 3px;
-	left: 5px;
-	width: 20px;
-	height: 20px; 
+	top: calc(var(--font-size) * 0.5);
+	left: 1%;
+	width: 5%;
+	height: 5%; 
 }
 
 .favicon-img {
-	width: 20px;
-	height: 20px;
+	width: 100%;
+	height: 100%;
 }
 
 /* side bar */
@@ -355,7 +343,7 @@ section li {
 
 .button {
 	display: block;
-	font-size: 33px;
+	font-size: calc(var(--font-size) * 2.5);
 	cursor: pointer;
 	align-self: center;
 	margin: 10% auto;
@@ -364,19 +352,18 @@ section li {
 
 /* snackbar */ 
 #snackbar-1 {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: var(--snackbar-primary);
-  color: var(--snackbar-secondary);
-  text-align: center;
-  border-radius: 30px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 30px;
-  font-size: 17px;
+	visibility: hidden;
+	min-width: 25%;
+	background-color: var(--snackbar-primary);
+	color: var(--snackbar-secondary);
+	text-align: center;
+	border-radius: 5%;
+	padding: 2.5%;
+	position: fixed;
+	z-index: 1;
+	left: 37.5%;
+	bottom: 2.5%;
+	font-size: calc(var(--font-size) * 2);
 }
 
 #snackbar-1.show {
@@ -387,18 +374,17 @@ section li {
 
 #snackbar-2 {
 	visibility: hidden;
-	min-width: 250px;
-	margin-left: -125px;
+	min-width: 25%;
 	background-color: var(--snackbar-primary);
 	color: var(--snackbar-secondary);
 	text-align: center;
-	border-radius: 30px;
-	padding: 16px;
+	border-radius: 5%;
+	padding: 2.5%;
 	position: fixed;
 	z-index: 1;
-	left: 50%;
-	bottom: 30px;
-	font-size: 17px;
+	left: 37.5%;
+	bottom: 2.5%;
+	font-size: calc(var(--font-size) * 2);
 }
 
 #snackbar-2.show {
@@ -409,20 +395,20 @@ section li {
 
 @-webkit-keyframes fadein {
   from {bottom: 0; opacity: 0;} 
-  to {bottom: 30px; opacity: 1;}
+  to {bottom: 2.5%; opacity: 1;}
 }
 
 @keyframes fadein {
   from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  to {bottom: 2.5%; opacity: 1;}
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;} 
+  from {bottom: 2.5%; opacity: 1;} 
   to {bottom: 0; opacity: 0;}
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
+  from {bottom: 2.5%; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }

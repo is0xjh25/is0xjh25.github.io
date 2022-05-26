@@ -5,48 +5,46 @@
 	--font-size: 1vw;
 }
 
-.default {
-	--primary-color: orange;
-	--secondary-color: rgb(201, 41, 212);
-	--background-primary: rgb(228, 228, 229);
-	--background-secondary: MistyRose;
-	--text-primary: black;
-	--text-secondary: #454545;
-	--link-li-primary: blue;
-	--link-li-hover: var(--secondary-color);
-	--link-li-visited: brown;
-	--link-h3-primary: Sienna;
-	--link-h3-hover: var(--secondary-color);
-	--link-h3-visited: SaddleBrown;
+.light-theme {
+	--primary-color: #FFE5D9;
+	--secondary-color: #8a549f;
+	--background-primary: #F5E6E8;
+	--background-secondary: #D5C6E0;
+	--text-primary: #192A51;
+	--text-secondary: #217ad9;
+	--link-li-primary: var(--secondary-color);
+	--link-li-hover: var(--text-secondary);
+	--link-li-visited: var(--secondary-color);
+	--link-h3-primary: var(--text-secondary);
+	--link-h3-hover: var(--text-secondary);
+	--link-h3-visited: var(--secondary-color);
 	--scroll-color: var(--secondary-color);
-	--sidebar-color: MistyRose;
-	--snackbar-primary: black;
-	--snackbar-secondary: white;
-	--image-border: var(--primary-color);
-	--gradient-primary: rgba(248, 148, 6, 1);
-	--gradient-secondary: rgba(255,0,0,0);
+	--sidebar-color: var(--text-primary);
+	--snackbar-primary: white;
+	--snackbar-secondary: black;
+	--gradient-primary: var(--secondary-color);
+	--gradient-secondary:  var(--background-primary);
 }
 
 .dark-theme {
-	--primary-color: rgb(255, 255, 255);
-	--secondary-color: rgb(71, 218, 255);
-	--background-primary: black;
-	--background-secondary: rgb(95, 93, 93);
-	--text-primary: white;
-	--text-secondary: #454545;
-	--link-li-primary: rgb(255, 0, 128);
-	--link-li-hover: var(--secondary-color);
-	--link-li-visited: brown;
-	--link-h3-primary: Sienna;
-	--link-h3-hover: var(--secondary-color);
-	--link-h3-visited: SaddleBrown;
+	--primary-color: #1B1B1E;
+	--secondary-color: #58A4B0;
+	--background-primary: #373F51;
+	--background-secondary: #1B1B1E;
+	--text-primary: #D8DBE2;
+	--text-secondary: #217ad9;
+	--link-li-primary: var(--secondary-color);
+	--link-li-hover: var(--text-secondary);
+	--link-li-visited: var(--secondary-color);
+	--link-h3-primary: var(--text-secondary);
+	--link-h3-hover: var(--text-secondary);
+	--link-h3-visited: var(--secondary-color);
 	--scroll-color: var(--secondary-color);
-	--sidebar-color: MistyRose;
+	--sidebar-color: var(--text-primary);
 	--snackbar-primary: white;
 	--snackbar-secondary: black;
-	--image-border: rgb(216, 36, 36);
-	--gradient-primary: rgb(216, 36, 36);
-	--gradient-secondary:  black;
+	--gradient-primary: var(--secondary-color);
+	--gradient-secondary:  var(--background-primary);
 }
 
 body {
@@ -98,7 +96,7 @@ header {
 	width: 20%;
 	height: 20%;
 	border-radius: 50%;
-	border: solid var(--primary-color);
+	border: solid var(--text-primary);
 	border-width: 3%;
 }
 
@@ -111,12 +109,10 @@ header {
 }
 
 #profile-img:hover + h1 {
-	text-shadow: 5% 0 5% var(--image-border);
 	font-size: calc(var(--font-size) * 3);
 }
 
 #profile-img:hover ~ #intro {
-	text-shadow: 5% 0 5% var(--image-border);
 	font-size: calc(var(--font-size) * 2.5);
 }
 
@@ -152,6 +148,7 @@ footer {
 
 footer h3 {
 	font-family: Arial, Helvetica, sans-serif;
+	color: var(--secondary-color)
 }
 
 .left-column {
@@ -256,7 +253,7 @@ h3 a:hover {
 hr {
 	width: 92.5%;
 	height: 0.25vh;
-	background-color: var(--primary-color)
+	background-color: var(--secondary-color)
 }
 
 section {
@@ -274,6 +271,9 @@ section div {
 }
 
 section h2 {
+	-webkit-border-radius: calc(var(--font-size) * 10);
+  	-moz-border-radius: calc(var(--font-size) * 3);
+  	border-radius: 50px;
 	background-image: linear-gradient(to right, var(--gradient-primary), var(--gradient-secondary));
 }
 
@@ -347,6 +347,7 @@ section li {
 	cursor: pointer;
 	align-self: center;
 	margin: 10% auto;
+	color: var(--primary-color);
 	background-color: transparent;
 }
 

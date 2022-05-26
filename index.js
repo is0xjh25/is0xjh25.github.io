@@ -31,10 +31,10 @@ function changeTheme(iconID) {
 		element.className = "fas fa-moon";
 	}
 
-	if (document.body.classList.contains ("default")) {
+	if (document.body.classList.contains ("light-theme")) {
 		document.body.className = "dark-theme";
 	} else if (document.body.classList.contains ("dark-theme")) {
-		document.body.className = "default";
+		document.body.className = "light-theme";
 	}
 
 	let x = document.getElementById("snackbar-2");

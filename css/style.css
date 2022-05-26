@@ -160,7 +160,7 @@ footer h3 {
 }
 
 .mid-column {
-	flex: 1;
+	flex: 2;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -168,7 +168,7 @@ footer h3 {
 }
 
 .right-column {
-	flex: 4;
+	flex: 3;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

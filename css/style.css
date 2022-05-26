@@ -135,6 +135,10 @@ header {
 	text-shadow: none;
 }
 
+#intro br:first-child {
+	display: none;
+}
+
 /* footer */
 footer {
 	display: flex;
@@ -440,6 +444,10 @@ section li {
 		font-size: calc(var(--font-size) * 1.5);
 	}
 
+	#intro br:first-child {
+		display: block;
+	}
+
 	#detail br {
 		display: none;
 	}
@@ -453,11 +461,15 @@ section li {
 		margin: -10% 0;
 	}
 
+	section {
+		margin: 2%;
+	}
+
 	footer {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		margin-top: 10%;
+		margin-top: 15%;
 	}
 
 	footer div {
@@ -514,12 +526,8 @@ section li {
 		height: 25vh;
 	}
 
-	#content{
-		margin: -20% 0;
-	}
-
 	footer {
-		margin-top: 20%;
+		margin-top: 15%;
 	}
 
 	#sidenav-active {

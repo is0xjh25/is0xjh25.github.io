@@ -1,7 +1,7 @@
 /* download resume.pdf */
 function download() {
 	var a = document.createElement("a");
-	a.href = "./resume.pdf";
+	a.href = "./Yun-Chi Hsiao's Resume.pdf";
 	a.setAttribute("download", "Yun-Chi Hsiao's Resume");
 	a.click();
 }
